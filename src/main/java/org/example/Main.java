@@ -8,7 +8,7 @@ import static org.example.PrintOut.*;
 
 //Todo : Alle Funktionen Testen (ProductItemRepo,Product)|| CSV Hinzufügen -- Auslesen -- Benutzen in ProductItem
 // || Tests erstellen ||
-// || Alle Funktionen mit einbilden in der While Schleife (Hinzufügen von Stock) || Problem beheben von ChangeQuantity wird noch nicht gespeichert
+// || Alle Funktionen mit einbilden in der While Schleife (Hinzufügen von Stock) || Problem beheben von Change Quantity wird noch nicht gespeichert
 
 public class Main {
     public static void main(String[] args) {
@@ -42,7 +42,7 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        PrintLog("=== PRODUKTVERWALTUNGSSYSTEM ===");
+        PrintLog("______ PRODUKTVERWALTUNGSSYSTEM ______");
 
         while (true) {
             PrintLog("""
@@ -180,11 +180,11 @@ public class Main {
                 }
 
                 case "6" -> {
-                    PrintLog("=== ALLE PRODUKTE ===");
+                    PrintLog("____ ALLE PRODUKTE ____");
                     for (ProductItem item : productItemRepo.getAll()) {
                         PrintLog(item.toString());
                     }
-                    PrintLog("=======================");
+                    PrintLog("________________________");
                 }
 
                 case "quit" -> {
