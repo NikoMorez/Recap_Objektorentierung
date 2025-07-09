@@ -47,11 +47,11 @@ class StockLog {
     }
 
     public static void printAllLogs() {
-        PrintLog("___________Lagerprotokoll____________");
+        PrintLog("=============  Lagerprotokoll ===============");
         for (StockLogClass entry : entries) {
             PrintLog(entry.toString());
         }
-        PrintLog("______________________________________");
+        PrintLog("==============================================");
     }
 }
 

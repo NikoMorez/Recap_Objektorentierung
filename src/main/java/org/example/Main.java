@@ -42,7 +42,7 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        PrintLog("______ PRODUKTVERWALTUNGSSYSTEM ______");
+        PrintLog("===== PRODUKTVERWALTUNGSSYSTEM =====");
 
         while (true) {
             PrintLog("""
@@ -180,11 +180,11 @@ public class Main {
                 }
 
                 case "6" -> {
-                    PrintLog("____ ALLE PRODUKTE ____");
+                    PrintLog("==== ALLE PRODUKTE ====");
                     for (ProductItem item : productItemRepo.getAll()) {
                         PrintLog(item.toString());
                     }
-                    PrintLog("________________________");
+                    PrintLog("=========================");
                 }
 
                 case "quit" -> {
